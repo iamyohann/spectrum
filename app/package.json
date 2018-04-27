@@ -1,0 +1,16 @@
+{
+  "name": "spectrum-app",
+  "productName": "Spectrum",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./main.prod.js",
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.215.1",
+    "keytar-prebuild": "^4.1.1"
+  }
+}
